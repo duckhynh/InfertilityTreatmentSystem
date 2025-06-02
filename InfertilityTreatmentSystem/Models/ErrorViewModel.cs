@@ -1,4 +1,4 @@
-namespace InfertilityTreatmentSystem.Models
+namespace _1.Models
 {
     public class ErrorViewModel
     {
