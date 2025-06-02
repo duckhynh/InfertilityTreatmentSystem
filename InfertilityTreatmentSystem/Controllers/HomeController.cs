@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using InfertilityTreatmentSystem.Models;
+using _1.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InfertilityTreatmentSystem.Controllers
