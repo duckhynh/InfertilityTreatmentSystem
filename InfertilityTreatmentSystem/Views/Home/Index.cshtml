@@ -2,7 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to albion online</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<section class="section-tab" style="padding: 30px; background: #ffffff;">
+    <div class="tab-bar" style="display: flex; gap: 20px; border-bottom: 2px solid #007bff; padding-bottom: 10px;">
+        <a href="#gioithieu" style="color: #007bff; font-weight: bold; text-decoration: none;">GIỚI THIỆU</a>
+        <a href="#chitiet" style="color: #007bff; font-weight: bold; text-decoration: none;">CHI TIẾT</a>
+        <a href="#chuyengia" style="color: #007bff; font-weight: bold; text-decoration: none;">CHUYÊN GIA</a>
+    </div>
+    <div class="tab-content" id="gioithieu" style="margin-top: 20px; font-size: 16px; color: #333;">
+        <h2>TỔNG QUAN</h2>
+        <p>Hơn 1 triệu cặp vợ chồng ở Việt Nam gặp các vấn đề về vô sinh hiếm muộn...</p>
+    </div>
+</section>
+
+<footer class="footer" style="background: #004fa3; color: white; padding: 30px;">
+    <div class="footer-content" style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 100%;">
+        <div style="flex: 1; padding-left: 50px;">
+            <strong>Tâm Anh Hospital</strong><br>
+            Hà Nội: 024 7106 6858 – 024 3872 3872<br>
+            TP.HCM: 028 7102 6789 – 093 180 6858<br>
+            © 2025 Bản quyền thuộc BVĐK Tâm Anh
+        </div>
+        <div style="flex: 1; padding-right: 50px; text-align: right;">
+            <strong>Thông tin</strong><br>
+            Hỏi đáp<br>
+            Dành cho khách hàng<br>
+            Đặt lịch khám<br>
+            Chính sách bảo mật
+        </div>
+    </div>
+</footer>
 </div>
+
+<link rel="stylesheet" href="~/css/homepage.css" />
+

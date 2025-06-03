@@ -1,0 +1,60 @@
+﻿@page
+@model InfertilityTreatmentSystem.Views.Home.RegisterModel
+@{
+    <div class="register-page" style="background-color: #e6f2ff; min-height: 100vh; display: flex; flex-direction: column;">
+        <!-- HEADER -->
+        <header style="background-color: #004fa3; padding: 15px; color: white; display: flex; justify-content: center; align-items: center;">
+            <div style="font-weight: bold; font-size: 20px; display: flex; align-items: center; gap: 10px; max-width: 1200px; width: 100%;">
+               
+            </div>
+        </header>
+
+        <!-- BODY -->
+        <main style="flex: 1; display: flex; justify-content: space-between; align-items: center; padding: 40px 80px; max-width: 1200px; margin: 0 auto; gap: 40px; flex-wrap: wrap;">
+            <div style="flex: 1; display: flex; justify-content: center; min-width: 300px;">
+                <div style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 100%; max-width: 420px;">
+                    <h3 style="margin-bottom: 20px; text-align: center;">Register as Guest</h3>
+                    <form onsubmit="return validateForm()">
+                        <input id="fullname" type="text" placeholder="Full Name" style="width: 100%; margin-bottom: 15px; padding: 10px;" required />
+                        <input id="email" type="email" placeholder="Email" style="width: 100%; margin-bottom: 15px; padding: 10px;" required />
+                        <input id="phone" type="tel" placeholder="Phone" style="width: 100%; margin-bottom: 15px; padding: 10px;" required />
+                        <input id="password" type="password" placeholder="Password" style="width: 100%; margin-bottom: 15px; padding: 10px;" required />
+                        <input id="confirm" type="password" placeholder="Confirm Password" style="width: 100%; margin-bottom: 20px; padding: 10px;" required />
+                        <button type="submit" style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; font-weight: bold;">Register</button>
+                    </form>
+                    <p id="error" style="color: red; font-size: 14px; text-align: center; display: none; margin-top: 10px;"></p>
+                </div>
+            </div>
+
+            <div style="flex: 1; display: flex; justify-content: center; min-width: 300px;">
+                
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer style="background-color: #004fa3; color: white; padding: 20px; text-align: center; font-size: 14px;">
+            <div>&copy; 2025 Lizard. All rights reserved.</div>
+            <div>
+                <a href="#" style="color: white; margin: 0 10px; text-decoration: underline;">Terms of Service</a>
+                <a href="#" style="color: white; margin: 0 10px; text-decoration: underline;">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function validateForm() {
+            const pass = document.getElementById('password').value;
+            const confirm = document.getElementById('confirm').value;
+            const error = document.getElementById('error');
+
+            if (pass !== confirm) {
+                error.innerText = "Passwords do not match.";
+                error.style.display = "block";
+                return false;
+            }
+
+            error.style.display = "none";
+            return true;
+        }
+    </script>
+}
