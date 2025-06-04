@@ -1,37 +1,157 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<section class="section-tab" style="padding: 30px; background: #ffffff;">
-    <div class="tab-bar" style="display: flex; gap: 20px; border-bottom: 2px solid #007bff; padding-bottom: 10px;">
-        <a href="#gioithieu" style="color: #007bff; font-weight: bold; text-decoration: none;">GIỚI THIỆU</a>
-        <a href="#chitiet" style="color: #007bff; font-weight: bold; text-decoration: none;">CHI TIẾT</a>
-        <a href="#chuyengia" style="color: #007bff; font-weight: bold; text-decoration: none;">CHUYÊN GIA</a>
-    </div>
-    <div class="tab-content" id="gioithieu" style="margin-top: 20px; font-size: 16px; color: #333;">
-        <h2>TỔNG QUAN</h2>
-        <p>Hơn 1 triệu cặp vợ chồng ở Việt Nam gặp các vấn đề về vô sinh hiếm muộn...</p>
+<section class="bg-light text-white py-5" style="background: url('/images/00.jpg') no-repeat center center; background-size: cover;">
+    <div class="container text-center">
+        <h1 class="display-4">Top Fertility Treatment Solutions in the City</h1>
+        <p class="lead mt-3">We are here to accompany you on your journey to parenthood.</p>
+        <a href="#" class="btn btn-primary btn-lg m-2">Learn More</a>
+        <a href="#" class="btn btn-outline-light btn-lg m-2">Book a Consultation</a>
     </div>
 </section>
 
-<footer class="footer" style="background: #004fa3; color: white; padding: 30px;">
-    <div class="footer-content" style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 100%;">
-        <div style="flex: 1; padding-left: 50px;">
-            <strong>Tâm Anh Hospital</strong><br>
-            Hà Nội: 024 7106 6858 – 024 3872 3872<br>
-            TP.HCM: 028 7102 6789 – 093 180 6858<br>
-            © 2025 Bản quyền thuộc BVĐK Tâm Anh
-        </div>
-        <div style="flex: 1; padding-right: 50px; text-align: right;">
-            <strong>Thông tin</strong><br>
-            Hỏi đáp<br>
-            Dành cho khách hàng<br>
-            Đặt lịch khám<br>
-            Chính sách bảo mật
+<!-- About Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="/images/15.jpg" class="img-fluid rounded shadow" alt="Fertility Treatment Image">
+                </div>
+            <div class="col-md-6">
+                <h2>Comprehensive Care for Your Parenthood Journey</h2>
+                <p>Our team of experienced specialists is ready to support you with the most advanced and effective infertility treatments.</p>
+                <div class="row text-center mt-4">
+                    <div class="col-4">
+                        <i class="bi bi-hospital fs-2 text-primary"></i>
+                        <p>State-of-the-Art Equipment</p>
+                    </div>
+                    <div class="col-4">
+                        <i class="bi bi-person-heart fs-2 text-success"></i>
+                        <p>Dedicated Doctors</p>
+                    </div>
+                    <div class="col-4">
+                        <i class="bi bi-clock-history fs-2 text-danger"></i>
+                        <p>24/7 Support</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</footer>
-</div>
+</section>
+<!-- Services Section -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="mb-4 text-success">Fertility Support Services</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm">
+                    <i class="bi bi-egg-fried fs-1 text-danger"></i>
+                    <h5 class="mt-3">In Vitro Fertilization (IVF)</h5>
+                    <p>The most common and effective treatment for couples struggling with infertility.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm">
+                    <i class="bi bi-person-bounding-box fs-1 text-primary"></i>
+                    <h5 class="mt-3">Infertility Consultation</h5>
+                    <p>Evaluation and creation of a personalized treatment plan tailored to your needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm">
+                    <i class="bi bi-heart-pulse fs-1 text-success"></i>
+                    <h5 class="mt-3">Endocrine Support</h5>
+                    <p>Hormone regulation to improve natural fertility.</p>
+                </div>
+            </div>
 
-<link rel="stylesheet" href="~/css/homepage.css" />
+            <!-- More services -->
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm">
+                    <i class="bi bi-droplet fs-1 text-warning"></i>
+                    <h5 class="mt-3">Semen Analysis</h5>
+                    <p>Accurate sperm testing and analysis to support effective diagnosis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm">
+                    <i class="bi bi-capsule-pill fs-1 text-info"></i>
+                    <h5 class="mt-3">Nutritional & Medication Support</h5>
+                    <p>Diet and supplements designed to boost fertility.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm">
+                    <i class="bi bi-journal-medical fs-1 text-danger"></i>
+                    <h5 class="mt-3">Monitoring & Follow-up</h5>
+                    <p>A detailed and effective system for monitoring the progress of your treatment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    :root {
+        --color-primary: #009CA6;
+        --color-primary-light: #E0F7F9; 
+        --color-accent: #00B4BB; 
+        --color-footer: #007E85; 
+        --color-text-muted: #555555; 
+        --color-white: #FFFFFF; 
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: var(--color-primary-light);
+    }
+
+    .navbar {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+
+    .navbar-nav .nav-link {
+        color: var(--color-white);
+    }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--color-accent);
+        }
+
+    .footer {
+        background-color: var(--color-footer);
+        color: var(--color-white);
+        padding: 20px;
+    }
+
+    .btn-primary {
+        background-color: var(--color-primary);
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: var(--color-accent);
+        }
+
+    .section-title {
+        color: var(--color-primary);
+    }
+
+    .text-muted {
+        color: var(--color-text-muted);
+    }
+
+    .service-card {
+        background-color: var(--color-white);
+        border: 1px solid #e3e3e3;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border-radius: 10px;
+    }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
 

@@ -1,0 +1,87 @@
+﻿@page
+@model InfertilityTreatmentSystem.Views.Doctor.IndexModel
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center text-success mb-5">Meet Our Fertility Specialists</h2>
+        <div class="row g-4">
+            <!-- Doctor 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="/images/doctor1.jpg" class="card-img-top" alt="Doctor Name">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dr. John Doe</h5>
+                        <p class="text-muted">Reproductive Endocrinologist</p>
+                        <p class="card-text">Dr. John has over 10 years of experience helping couples achieve their dreams of parenthood. Specializing in IVF and hormonal therapies.</p>
+                        <a href="/DoctorDetails/1" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="/images/doctor2.jpg" class="card-img-top" alt="Doctor Name">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dr. Jane Smith</h5>
+                        <p class="text-muted">Obstetrician & Gynecologist</p>
+                        <p class="card-text">Dr. Jane specializes in infertility treatments with a focus on advanced diagnostic procedures and personalized care plans for patients.</p>
+                        <a href="/DoctorDetails/2" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="/images/doctor3.jpg" class="card-img-top" alt="Doctor Name">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dr. Alice Brown</h5>
+                        <p class="text-muted">Urologist</p>
+                        <p class="card-text">With expertise in male fertility, Dr. Alice offers semen analysis and surgical options to enhance male reproductive health.</p>
+                        <a href="/DoctorDetails/3" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Optional Custom Styling -->
+<style>
+    .card {
+        border-radius: 10px;
+    }
+
+    .card-img-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .btn-primary {
+        background-color: #009ca6;
+        color: white;
+        border-radius: 4px;
+    }
+
+        .btn-primary:hover {
+            background-color: #007e85;
+        }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    .text-muted {
+        font-size: 1rem;
+        color: #777;
+    }
+</style>

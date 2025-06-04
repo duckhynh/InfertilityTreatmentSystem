@@ -19,40 +19,19 @@ namespace InfertilityTreatmentSystem.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View(new LoginViewModel());
-        }
-
-        [HttpPost]
-        public IActionResult Login(LoginViewModel model)
-        {
-            if (!ModelState.IsValid)
-                return View(model);
-            if (model.Username == "admin" && model.Password == "123")
+        
+            public IActionResult Login()
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Login", "Account");
             }
-
-            ModelState.AddModelError(string.Empty, "Tên đăng nhập hoặc mật khẩu không đúng.");
-            return View(model);
-        }
-        [HttpGet]
-        public IActionResult Register()
+        public IActionResult register()
         {
-            return View();
+            return RedirectToAction("Register", "Account");
         }
-
     }
 }
